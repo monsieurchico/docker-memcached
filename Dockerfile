@@ -2,7 +2,7 @@
 # Memcached Dockerfile
 # git@github.com:monsieurchico/docker-memcached.git
 #
-FROM dockerfile/java:oracle-java8
+FROM ubuntu:latest
 MAINTAINER Romain Derocle "rderocle@gmail.com"
 
 # prevent debian errors
@@ -24,4 +24,4 @@ COPY ./resources/startup.sh /startup.sh
 ENTRYPOINT ["/bin/bash", "/startup.sh"]
 
 # define workdir
-WORKDIR /data
+WORKDIR /

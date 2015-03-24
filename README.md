@@ -23,6 +23,6 @@ You can bind ports :
 docker run \
   -d \
   --name memcached \
-  -p 11211 \
+  -p 11211:11211 \
   monsieurchico/memcached
 ```
